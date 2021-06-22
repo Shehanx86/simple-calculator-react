@@ -28,6 +28,7 @@ class Calculator extends Component {
             <button onClick={this.updateValue1} value={this.props.value}>{this.props.value}</button>
             <button onClick={this.updateValue2} value={this.props.value}>{this.props.value}</button>
             <button onClick={this.add}>add</button>
+            {this.state.result}
         </div>  );
     }
 }
