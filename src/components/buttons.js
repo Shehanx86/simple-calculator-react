@@ -20,16 +20,22 @@ export class Buttons extends Component {
 
     answer(){
         switch(this.state.func){
-            case '+':
-                this.setState({result: this.state.num2 + this.state.num1},() => console.log("result = " + this.state.result))
-                console.log(this.state.num2 + " + " + this.state.num1)
-
-            case '-':
+            case '+':{
+                this.setState({result: this.state.num2 + this.state.num1})
+                break;
+            }
+            case '-':{
                 this.setState({result: this.state.num2 - this.state.num1})
-            case '*':
+                console.log(this.state.num2 + " - " + this.state.num1)
+                break;
+            }
+            case '*':{
                 this.setState({result: this.state.num2 * this.state.num1})
-            default:
+                break;
+            }
+            default:{
                 this.setState({result: this.state.num2 / this.state.num1})
+            }
         }
     }
 
