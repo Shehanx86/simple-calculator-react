@@ -1,6 +1,6 @@
 
 import React, { Component } from 'react';
-import Lines from './Buttons';
+import Lines from './Lines';
 import FunctionButtons from './FunctionButtons';
 
 export class Calculator extends Component {
