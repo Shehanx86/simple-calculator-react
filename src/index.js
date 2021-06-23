@@ -2,12 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Calc1 from './components/cal1';
+import App from './App.js';
 
 
 ReactDOM.render(
   <React.StrictMode>
-    <Calc1 />
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
